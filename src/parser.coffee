@@ -125,6 +125,12 @@ class exports.Parser
     @idx += length
     text
 
+  readData: ->
+    length = @readShort()
+    assert(length <= @buf.length)
+
+    @readByte() for i in [0...length]
+
 
   rewind: ->
     @idx = 0

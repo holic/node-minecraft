@@ -60,8 +60,11 @@ exports.LABELS =
   0x6C: 'enchant item'
   0x82: 'update sign'
   0x83: 'item data'
+  0x84: 'update tile entity'
   0xC8: 'increment stat'
   0xC9: 'player list item'
+  0xCA: 'player abilities'
+  0xFA: 'plugin message'
   0xFE: 'ping'
   0xFF: 'kick'
 
@@ -135,8 +138,11 @@ exports.SCHEMAS =
   0x6C: ['Byte', 'Byte']
   0x82: ['Int', 'Short', 'Int', 'Str', 'Str', 'Str', 'Str']
   0x83: ['Short', 'Short', 'Text']
+  0x84: ['Int', 'Short', 'Int', 'Byte', 'Int', 'Int', 'Int']
   0xC8: ['Int', 'Byte']
   0xC9: ['Str', 'Bool', 'Short']
+  0xCA: ['Bool', 'Bool', 'Bool', 'Bool']
+  0xFA: ['Str', 'Data']
   0xFE: []
   0xFF: ['Str']
 
